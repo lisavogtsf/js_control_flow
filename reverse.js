@@ -11,9 +11,7 @@ for (var i = 0; i < inputAsArray.length; i++) {
 
 }
 
-console.log(reverseArray);
-
 //join
-var reverseString = reverseArray.join();
+var reverseString = reverseArray.join('');
 
 console.log(reverseString);
