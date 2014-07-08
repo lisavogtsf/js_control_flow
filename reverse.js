@@ -1,13 +1,19 @@
 var inputString = "building"
 
+//split by empty string
+var inputAsArray = inputString.split('');
+var reverseArray = []
 // reverse it 
 
-for (var i = 0; i < inputString.length; i++) {
-	//split by empty string
-	var reverseArray = inputString.split('');
+for (var i = 0; i < inputAsArray.length; i++) {
 
-	// treat string as an array
-	// var reverseString[i] = inputString[inputString.length - (i + 1)];
+	reverseArray[i] = inputAsArray[inputString.length - (1 + i)];
+
 }
+
 console.log(reverseArray);
-//console.log(reverseString);
+
+//join
+var reverseString = reverseArray.join();
+
+console.log(reverseString);
