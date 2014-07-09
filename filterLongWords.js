@@ -2,13 +2,20 @@
 //to filter out all words longer than maxLength from words[]
 
 var maxLength = 6;
-var words = ["super", "califrag", "il", "is", "tic", "ex", "pialidocious", "even", "though", "the", "sound", "of", "it", "is", "something", "quite", "atrocious"];
-// var shortWords = [];
+var words = ["super", "califrag", "il", "is", "tic", "ex", "pialidocious", "pialidocious", "even", "though", "the", "sound", "of", "it", "is", "something", "quite", "atrocious"];
+var shortWords = [];
 
 //use loop to go through the array
 for (var i = 0; i < words.length; i++) {
-	if (words[i].length > maxLength) {
-		words.splice(i, 1);
-	} 
+	//if (words[i].length > maxLength) {
+		// words.splice(i, 1);
+		// i--;
+	//} 
+	if (words[i].length <= maxLength) {
+
+		shortWords.push(words[i]);
+
+	}
+
 }
-console.log(words);
+console.log(shortWords);
